@@ -1,0 +1,34 @@
+{
+    "name": "nwidart/logmanager",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\LogManager\\": "",
+            "Modules\\LogManager\\App\\": "app/",
+            "Modules\\LogManager\\Database\\Factories\\": "database/factories/",
+            "Modules\\LogManager\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\LogManager\\Tests\\": "tests/"
+        },
+        "files": [
+            "App/Helpers/LogHelpers.php"
+        ]
+    }
+}

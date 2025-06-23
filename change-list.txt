@@ -1,0 +1,8 @@
+app/Http/Controllers/Payments/Stripe/StripePaymentController.php
+app/Http/Controllers/Payments/Stripe/StripeWithAutoRecurringPaymentController.php
+app/Http/Controllers/SubscriptionsController.php
+app/Models/OldPaymentGatewayProduct.php
+app/Models/SubscriptionItems.php
+app/Models/Subscriptions.php
+database/migrations/2019_05_03_000002_create_subscriptions_table.php
+database/migrations/2024_09_30_054741_create_old_payment_gateway_products_table.php

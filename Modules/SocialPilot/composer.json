@@ -1,0 +1,31 @@
+{
+    "name": "nwidart/socialpilot",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [],
+            "aliases": {
+
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\SocialPilot\\": "",
+            "Modules\\SocialPilot\\App\\": "app/",
+            "Modules\\SocialPilot\\Database\\Factories\\": "database/factories/",
+            "Modules\\SocialPilot\\Database\\Seeders\\": "database/seeders/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Modules\\SocialPilot\\Tests\\": "tests/"
+        }
+    }
+}

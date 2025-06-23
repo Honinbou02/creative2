@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "poised-epigram-392311",
+  "private_key_id": "8088f547dac6a47f7a51c4dfde9b5b8494365dfd",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQC409NKTSvuir1Y\nnWEJ9RUCc8iNEpmLIM/MNDEkec3ZJgxw1in3jbjR2vqsaBu5m0LtnWKZXOV+fO7e\n/tGiLWQpLeXkUFm/l4iwkEsFVAKIuifNR9dlphHnrP3e/JciuHGFZpts1GZmoxLk\nSuMFXH0HZO9zOrl6ZEkIxY6sOyIQuIXULNwy4oH1nJk37WznYtmNl8iUhbO2ZO0/\neBEYkER4gZm6WBiqb9ESmb+DRi9/v0I/y4aVxUspL8bHSEuxuqtJtSL2wbI8dHjh\n13zV2bLuYUOqhy6+x1JBrSR8fV1yxQLKldyXNynXQ+NaT6gicW209rWtTJRCEkKx\ncy2SEEPXAgMBAAECggEAD7qNuWh+K8N9ypFAuqazKNgZQebKefG1t/8xtr9w2ku9\nH6ByG4GMMBEDvRvyTrtyQ3izH9xXzAmuEFG8yEw267Q0DgJyfiCoqWdAzc1w68Qf\nx/3sTC0I9V9zjqrjN7lc28k4F9euy97mfYFhTB8ApYTxmwDtMN0LmWX/4Wik2lRG\n+nBgSFXRS0ss1vEozPBAG0Uff6+sgMjphyyGXkFP+sOK8x7lqKNzim2qSEtbNPkm\ni61gjHVJYle2EdOSJ4L37MUpezTCCxOeY+d4jMx7TTWyl7fXTZlNVqLWXGmNIUBI\nvyXxBQfOIJESLEVwAm41gM8FRuTAAjeYo+1nC6Mk+QKBgQD3wqklB4TzsIJcQQQ2\n8bt9+dOTA4XRPpxNBdKOLd72Ffs8uskdCh8ms6SGKk6aPK8Nk49KL5aAG+05SelH\noQXnN16Z5cnpL4ujB0Wx6rcGHSCG53Lh6QHyK2mu6PJbLhd5PrbiKEijWBULL76J\nf/QHLSNi5Fg2ExXgNleLQGV1fwKBgQC++WCFmffRIL/9Yrfc/Y3ZiZisuFJOqsqv\nSs24GJX0FegbthXCejBbo+KAeUKUC7Zzx6ZPuzEx50HA4d+h8nd7lRGp/7x6Fadp\nervRSVLh3O9ROAQqMJrpZ2q2eifn3G6XWbr38M14FvJvS972mXPZMQpBfeGq5N2T\neNGM5YHNqQKBgQDRmbHkrLbSPgoap7o8DUbzrS1LWxiTS2eJVZqqQ64y+6ee2doY\nIh72a9WM1y/GFf51+tanCRlGadnHtHqQ6W2IDPSQN7EX/+we0KEqggmyN2P0HMu4\nyJmn2QhAO7wEXTrojKDFNRU2cubintKPmlrE02/zUoA5xu2jz/VBzgnHWwKBgHCd\nMZPXBVGm1FAhBHcmdZ1QDF3dm3uUL01K+SCULujueh7NMuupjhab/5bu6pnOhlqj\n4qilpA7fZeDN0Uf4aQjREMeEbKo5Vq1WmKaDbIKP+/eS5rHSU6dLOpw8UIfjbruF\nSEGpGCC2t2N2BBa6ypvK1VdlWcuihh7OYhOJyw9xAoGBAO/wwxCo6LNbnlLEn677\nMSDWTaCMk8iZLu4CliPZaq0FICDq4oi7J5ONLeGli+eUgLVmNPw2+QXjjg468M2K\n2f7LwDtpSRhO2agi61zLDWnUjJc9+GQ2QMjK43ftTTUjOMtoDRpGUMWjP4pTIWb8\n3ye0yifam7VCXb3Q2DNXuBVX\n-----END PRIVATE KEY-----\n",
+  "client_email": "writebot-tts@poised-epigram-392311.iam.gserviceaccount.com",
+  "client_id": "117983199402458539534",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/writebot-tts%40poised-epigram-392311.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

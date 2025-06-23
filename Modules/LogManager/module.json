@@ -1,0 +1,11 @@
+{
+    "name": "LogManager",
+    "alias": "logmanager",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\LogManager\\App\\Providers\\LogManagerServiceProvider"
+    ],
+    "files": []
+}

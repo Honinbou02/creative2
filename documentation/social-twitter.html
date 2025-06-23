@@ -1,0 +1,744 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="landing page starter kit">
+  <meta name="keywords" content="bootstrap 5, saas, landing page">
+  <meta name="author" content="asaduzzaman">
+  <title>WriteRap - AI Content Generator as SaaS Platform</title>
+  <link rel="stylesheet" href="./assets/css/fonts/ff-1.css" />
+  <link rel="stylesheet" href="./assets/css/fonts/ff-2.css" />
+  <link rel="stylesheet" href="./assets/css/fonts/bootstrap-icons.css" />
+  <link rel="icon" href="./assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="./assets/css/plugins.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body data-bs-theme="light">
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="preloader__img">
+      <img src="./assets/img/preloader-img.png" alt="image">
+    </div>
+  </div>
+  <!-- preloader End -->
+  <!-- Dashboard Max Container -->
+  <div class="container-fluid container-xmax p-0">
+    <div class="row g-0">
+      <div class="col-12">
+        <!-- Main  -->
+        <div class="doc-main">
+          <!-- Sidebar -->
+          <aside class="doc-sidebar doc-sidebar-wrapper" onclick="toggleSidebar()">
+            <div class="doc-sidebar__container">
+              <button class="side_btn">
+                <svg width="7" height="14" viewBox="0 0 5 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.50538 1.13155C4.77165 1.39782 4.77165 1.82952 4.50538 2.09579L2.60113 4.00004L4.50538 5.90428C4.77165 6.17055 4.77165 6.60225 4.50538 6.86852C4.23911 7.13479 3.80741 7.13479 3.54114 6.86852L1.15478 4.48215C0.888511 4.21589 0.888511 3.78418 1.15478 3.51792L3.54114 1.13155C3.80741 0.865288 4.23911 0.865288 4.50538 1.13155Z" fill="white" />
+                </svg>
+              </button>
+              <div class="doc-sidebar__content">
+                <div class="d-block py-3 px-4 px-md-6 px-xl-8">
+                  <a href="index.html" class="link logo_area d-flex align-items-center flex-shrink-0 logo">
+                    <img src="./assets/img/logo.png" alt="logo" class="img-fluid object-fit-contain" />
+                    <img src="./assets/img/favicon.png" alt="logo" class="img-fluid object-fit-contain" />
+                  </a>
+                </div>
+                <div class="border-bottom border-outline border-opacity-2 pb-1"></div>
+                <nav class="doc-sidebar__nav py-4 px-4 px-md-6 px-xl-8">
+                  <div class="pb-4">
+                    <ul class="side_nav_wrapper ps-0">
+                      <li class="side_nav_item has_dropdown fs-14">
+                        <a href="javascript:void(0);" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-box"></i></span> <span class="main_sb_title">Getting Started</span> </a>
+                        <ul class="sub_side_nav_wrapper list-unstyled py-2 ps-5">
+                          <li class="side_nav_item fs-14">
+                            <a href="index.html" class="sb_title">Introduction</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="file-structure.html" class="sb_title">File Structure</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="server-requirement.html" class="sb_title">Server Requirements</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="create-database.html" class="sb_title">Create Database</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="upload-file.html" class="sb_title">Upload Files</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="server-install.html" class="sb_title">Installation on Server</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="localhost-install.html" class="sb_title">Installation on Localhost</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="side_nav_item has_dropdown fs-14">
+                        <a href="javascript:void(0);" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-bell-slash"></i></span>
+                          <span class="main_sb_title">Subscriptions</span> </a>
+                        <ul class="sub_side_nav_wrapper list-unstyled py-2 ps-5">
+                          <li class="side_nav_item fs-14">
+                            <a href="subscribtion-plan.html" class="sb_title">Subscription Plan</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="subscription-settings.html" class="sb_title">Subscription Settings</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="side_nav_item has_dropdown fs-14">
+                        <a href="javascript:void(0);" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-bell-slash"></i></span>
+                          <span class="main_sb_title">Social Account API</span> </a>
+                        <ul class="sub_side_nav_wrapper list-unstyled py-2 ps-5">
+                          <li class="side_nav_item fs-14">
+                            <a href="social-facebook.html" class="sb_title">Facebook Platform</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="social-insta.html" class="sb_title">Instagram Platform</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="social-linkdin.html" class="sb_title">LinkedIn Platform</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="social-twitter.html" class="sb_title">X/Twitter Platform</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="side_nav_item has_dropdown fs-14">
+                        <a href="javascript:void(0);" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-gear-wide-connected"></i></span>
+                          <span class="main_sb_title">System Settings</span> </a>
+                        <ul class="sub_side_nav_wrapper list-unstyled py-2 ps-5">
+                          <li class="side_nav_item fs-14">
+                            <a href="system-settings.html" class="sb_title">System Settings</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="credentail-setup.html" class="sb_title">Credential Setup</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="email-template.html" class="sb_title">Email Template</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="add-localization.html" class="sb_title">Multi Language</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="add-currency.html" class="sb_title">Multi Currency</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="payment-gateway.html" class="sb_title">Payment Gateway</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="offline-payment.html" class="sb_title">Offline Payment</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="corn-job.html" class="sb_title">Cron List</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="utilities.html" class="sb_title">Utilities</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="side_nav_item has_dropdown fs-14">
+                        <a href="javascript:void(0);" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-gear"></i></span>
+                          <span class="main_sb_title">Configuration or Setup</span> </a>
+                        <ul class="sub_side_nav_wrapper list-unstyled py-2 ps-5">
+                          <li class="side_nav_item fs-14">
+                            <a href="open-ai-setup.html" class="sb_title">OpenAI Setup</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="sd-setup.html" class="sb_title">Stable Diffusion Setup</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="google-tts-setup.html" class="sb_title">Google TTS Setup</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="aws-tts-setup.html" class="sb_title">Azure TTS Setup</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="paypal-payment-setup.html" class="sb_title">PayPal Payment Setup</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="stripe-payment-setup.html" class="sb_title">Stripe Payment Setup</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="serper-api-setup.html" class="sb_title">Serper API Setup (Real time chat)</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="aws-storage-setup.html" class="sb_title">AWS S3 Storage Setup</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="smtp-setup.html" class="sb_title">SMTP Setup</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="google-ads-setup.html" class="sb_title">Google AdSense Setup</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="side_nav_item has_dropdown fs-14">
+                        <a href="javascript:void(0);" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-share"></i></span>
+                          <span class="main_sb_title">Social Login</span> </a>
+                        <ul class="sub_side_nav_wrapper list-unstyled py-2 ps-5">
+                          <li class="side_nav_item fs-14">
+                            <a href="google-login.html" class="sb_title">Google Login</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="fb-login.html" class="sb_title">Facebook Login</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="side_nav_item fs-14">
+                        <a href="ai-image-list.html" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-file-earmark-image"></i></span>
+                          <span class="main_sb_title">AI Images</span> </a>
+                      </li>
+                      <li class="side_nav_item fs-14">
+                        <a href="ai-photo-studio.html" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-file-earmark-image"></i></span>
+                          <span class="main_sb_title">AI Photo Studio</span> </a>
+                      </li>
+                      <li class="side_nav_item fs-14">
+                        <a href="ai-avatar-pro.html" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-person-bounding-box"></i></span>
+                          <span class="main_sb_title">AI Avatar Pro</span> </a>
+                      </li>
+                      <li class="side_nav_item fs-14">
+                        <a href="ai-product-shot.html" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-shop-window"></i></span>
+                          <span class="main_sb_title">AI Product Shot</span> </a>
+                      </li>
+                      <li class="side_nav_item fs-14">
+                        <a href="text-to-speech.html" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-speaker-fill"></i></span>
+                          <span class="main_sb_title">Text to Speech </span></a>
+                      </li>
+                      <li class="side_nav_item fs-14">
+                        <a href="ai-generate-article.html" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-paragraph"></i></span>
+                          <span class="main_sb_title">AI Blog Wizard</span> </a>
+                      </li>
+                      <li class="side_nav_item fs-14">
+                        <a href="seo-optimizer.html" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-paragraph"></i></span>
+                          <span class="main_sb_title">SEO Optimizer</span> </a>
+                      </li>
+                      <li class="side_nav_item has_dropdown fs-14">
+                        <a href="javascript:void(0);" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-plugin"></i></span>
+                          <span class="main_sb_title">Plagiarism</span> </a>
+                        <ul class="sub_side_nav_wrapper list-unstyled py-2 ps-5">
+                          <li class="side_nav_item fs-14">
+                            <a href="ai-plagiarism.html" class="sb_title">AI Plagiarism</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="ai-detector.html" class="sb_title">AI Detector</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="side_nav_item has_dropdown fs-14">
+                        <a href="javascript:void(0);" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-chat-dots"></i></span>
+                          <span class="main_sb_title">AI Chat</span> </a>
+                        <ul class="sub_side_nav_wrapper list-unstyled py-2 ps-5">
+                          <li class="side_nav_item fs-14">
+                            <a href="ai-code-generate.html" class="sb_title">AI Code Generate</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="ai-chat-image.html" class="sb_title">AI Chat Image</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="ai-chat.html" class="sb_title">AI Chat</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="ai-vision.html" class="sb_title">AI Vision</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="ai-pdf-chat.html" class="sb_title">AI PDF Chat</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="side_nav_item fs-14">
+                        <a href="template.html" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-file-earmark-image"></i></span>
+                          <span class="main_sb_title">Templates</span> </a>
+                      </li>
+                      <li class="side_nav_item fs-14">
+                        <a href="faq.html" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-info-circle"></i></span>
+                          <span class="main_sb_title">Faq</span> </a>
+                      </li>
+                      <li class="side_nav_item has_dropdown fs-14">
+                        <a href="javascript:void(0);" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-app-indicator"></i></span>
+                          <span class="main_sb_title">Appearance</span></a>
+                        <ul class="sub_side_nav_wrapper list-unstyled py-2 ps-5">
+                          <li class="side_nav_item fs-14">
+                            <a href="appearance.html" class="sb_title">Appearance</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="client-feedback.html" class="sb_title">Client Feedback</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="about-us.html" class="sb_title">About Us</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="privacy-policy.html" class="sb_title">Privacy Policy</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="terms-conditions.html" class="sb_title">Terms & Conditions</a>
+                          </li>
+                          <!-- <li class="side_nav_item fs-14">
+                      <a href="contact-us.html" class="sb_title">Contact Us</a>
+                    </li> -->
+                        </ul>
+                      </li>
+                      <li class="side_nav_item has_dropdown fs-14">
+                        <a href="javascript:void(0);" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-wordpress"></i></span>
+                          <span class="main_sb_title">Wordpress</span> </a>
+                        <ul class="sub_side_nav_wrapper list-unstyled py-2 ps-5">
+                          <li class="side_nav_item fs-14">
+                            <a href="wordpress-credential.html" class="sb_title">Wordpress Credential</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="wordpress-settings.html" class="sb_title">Wordpress Settings</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="side_nav_item has_dropdown fs-14">
+                        <a href="javascript:void(0);" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-info-circle"></i></span>
+                          <span class="main_sb_title">How to Questions</span> </a>
+                        <ul class="sub_side_nav_wrapper list-unstyled py-2 ps-5">
+                          <li class="side_nav_item fs-14">
+                            <a href="add-customer.html" class="sb_title">Add Customer & Assign Package</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="add-language.html" class="sb_title">Add New Language</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="ai-settings.html" class="sb_title">Configure AI Settings</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="stable-diffusion.html" class="sb_title">Configure Stable Diffusion</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="subscription-package.html" class="sb_title">Add Subscription Package</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="unlimited-package.html" class="sb_title">Unlimited Package Balance</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="payment-request.html" class="sb_title">Payment Request</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="train-ai.html" class="sb_title">Train AI ChatBot</a>
+                          </li>
+                          <li class="side_nav_item fs-14">
+                            <a href="ai-assistant.html" class="sb_title">AI Rewrite Content</a>
+                          </li>
+                        </ul>
+                      </li>
+                      <li class="side_nav_item fs-14">
+                        <a href="change-log.html" class="sb_title d-flex align-items-center gap-2 fw-normal"><span><i class="bi bi-file-text"></i></span>
+                          <span class="main_sb_title">Changelog</span> </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+                <div class="purchase_btn mt-auto py-4 px-4 px-md-6 px-xl-8">
+                  <a href="http://1.envato.market/writerap" class="link d-inline-flex align-items-center justify-content-center gap-2 text-center py-3 px-6 w-100 inverse-surface inverse-on-surface rounded-pill">
+                    <span class="d-block flex-shrink-0">
+                      <img src="./assets/img/icon-envato.png" alt="image" class="img-fluid">
+                    </span>
+                    <span class="d-block fs-14"> Purchase Now </span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <!-- /Sidebar -->
+          <!-- Content  -->
+          <div class="doc-content">
+            <!-- Header -->
+            <header class="header header--sticky border-bottom border-outline border-opacity-2 px-xl-12">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <nav class="menu d-lg-flex align-items-lg-center py-3 py-lg-0">
+                      <div class="d-flex align-items-center justify-content-between d-lg-none">
+                        <a href="index.html" class="link d-flex align-items-center flex-shrink-0 logo">
+                          <img src="./assets/img/logo.png" alt="logo" class="img-fluid object-fit-contain" />
+                        </a>
+                        <div class="d-inline-flex align-items-center gap-2">
+                          <button class="w-10 h-10 p-0 border-0 lh-1 inverse-surface bg-opacity-05 on-surface :on-surface transition :bg-primary-300 rounded flex-shrink-0 order-sm-3 fs-18" data-bs-toggle="modal" data-bs-target="#doc-search-list">
+                            <i class="bi bi-search"></i>
+                          </button>
+                          <button class="menu-toggle w-10 h-10 p-0 border-0 lh-1 inverse-surface bg-opacity-05 on-surface :on-surface transition :bg-primary-300 rounded flex-shrink-0 order-sm-3 fs-24">
+                            <i class="bi bi-list"></i>
+                          </button>
+                        </div>
+                      </div>
+                      <!-- <div class="doc-search d-none d-xl-flex">
+						<button class="doc-search__btn" type="button" data-bs-toggle="modal"
+							data-bs-target="#doc-search-list">
+							<span class="doc-search__content">
+								<span class="flex-shrink-0">
+									<i class="bi bi-search"></i>
+								</span>
+								<span class="d-block">
+									Search
+								</span>
+							</span>
+							<span class="doc-search__shortcut flex-shrink-0">
+								Ctrl K
+							</span>
+						</button>
+					</div> -->
+                      <div class="menu-nav d-lg-flex align-items-lg-center flex-grow-1">
+                        <form action="" class="position-relative nav_search_form">
+                          <input class="form-control border border-1 border-dark border-opacity-10 ps-8 rounded-2" type="text" placeholder="Search (Ctrl+/)">
+                          <span class="position-absolute nav_search_icon">
+                            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke="#B3B9BD" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                              <path d="M13.9996 13.9996L11.0996 11.0996" stroke="#B3B9BD" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                          </span>
+                        </form>
+                        <ul class="list list-lg-row gap-5 ms-xl-auto">
+                          <li class="menu-list">
+                            <a href="#" class="link menu-link fs-14 lh-1"> Home </a>
+                          </li>
+                          <!-- <li class="menu-list">
+								<a href="#" class="link menu-link has-sub fs-14 lh-1"> Document </a>
+								<ul class="list menu-sub">
+									<li class="menu-sub-list">
+										<a href="#" class="link menu-sub-link fs-14 lh-1"> Sub Menu </a>
+									</li>
+									<li class="menu-sub-list">
+										<a href="#" class="link menu-sub-link fs-14 lh-1"> Sub Menu </a>
+									</li>
+									<li class="menu-sub-list">
+										<a href="#" class="link menu-sub-link fs-14 lh-1"> Sub Menu </a>
+									</li>
+								</ul>
+							</li> -->
+                          <li class="menu-list">
+                            <a href="https://themetags.ticksy.com/" target="_blank" class="link menu-link align-items-center gap-1 fs-14 lh-1">
+                              <span class="d-block"> Support </span>
+                              <span class="d-block flex-shrink-0 fs-10">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </span>
+                            </a>
+                          </li>
+                          <li class="menu-list">
+                            <a href="https://themeforest.net/user/themetags/portfolio" target="_blank" class="link menu-link align-items-center gap-1 fs-14 lh-1">
+                              <span class="d-block"> Envato </span>
+                              <span class="d-block flex-shrink-0 fs-10">
+                                <i class="bi bi-arrow-up-right"></i>
+                              </span>
+                            </a>
+                          </li>
+                        </ul>
+                        <ul class="list list-lg-row align-items-lg-center gap-lg-6 ms-lg-auto ms-xl-6 ms-xxl-10">
+                          <li class="menu-list">
+                            <a href="http://1.envato.market/writerap" class="link d-inline-flex justify-content-center px-6 py-2 rounded-pill primary on-primary fs-14 text-center"> Purchase Now </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </header>
+            <!-- Doc Search List Modal -->
+            <!-- <div class="modal doc-search--modal fade" id="doc-search-list" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header border-bottom-0">
+				<div class="doc-search__is shadow-2">
+					<label for="doc-search-input" class="doc-search__icon">
+						<i class="bi bi-search"></i>
+					</label>
+					<input id="doc-search-input" type="text" class="form-control doc-search__input"
+						placeholder="Search for concepts or code">
+					<button class="doc-search__cancel">
+						Cancel
+					</button>
+				</div>
+			</div>
+			<div class="modal-body py-0">
+				<ul class="list doc-search__list">
+					<li>
+						<a href="#" class="link d-flex gap-3 on-surface py-2 px-4 :primary :on-primary rounded-1">
+							<span class="d-inline-block flex-shrink-0">
+								<i class="bi bi-columns-gap"></i>
+							</span>
+							<span class="d-flex flex-column flex-grow-1">
+								<span class="h6 d-block mb-1">
+									Configuring your display using the dashboard
+								</span>
+								<span class="d-flex align-items-center gap-1 fs-12 mb-2">
+									<span class="d-inline-block">
+										Search UI
+									</span>
+									<span class="d-inline-block">
+										<i class="bi bi-chevron-right"></i>
+									</span>
+									<span class="d-inline-block">
+										Events
+									</span>
+								</span>
+								<span class="doc-search__description fs-14">
+									Nice nice, that’s a good start. But what if we want to introduce the ellipsis not on
+									the first line but somewhere, say, the third line of text?
+								</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link d-flex gap-3 on-surface py-2 px-4 :primary :on-primary rounded-1">
+							<span class="d-inline-block flex-shrink-0">
+								<i class="bi bi-calendar2-range"></i>
+							</span>
+							<span class="d-flex flex-column flex-grow-1">
+								<span class="h6 d-block mb-1">
+									Configuring your display using the dashboard
+								</span>
+								<span class="d-flex align-items-center gap-1 fs-12 mb-2">
+									<span class="d-inline-block">
+										Search UI
+									</span>
+									<span class="d-inline-block">
+										<i class="bi bi-chevron-right"></i>
+									</span>
+									<span class="d-inline-block">
+										Events
+									</span>
+								</span>
+								<span class="doc-search__description fs-14">
+									Nice nice, that’s a good start. But what if we want to introduce the ellipsis not on
+									the first line but somewhere, say, the third line of text?
+								</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link d-flex gap-3 on-surface py-2 px-4 :primary :on-primary rounded-1">
+							<span class="d-inline-block flex-shrink-0">
+								<i class="bi bi-gear"></i>
+							</span>
+							<span class="d-flex flex-column flex-grow-1">
+								<span class="h6 d-block mb-1">
+									Configuring your display using the dashboard
+								</span>
+								<span class="d-flex align-items-center gap-1 fs-12 mb-2">
+									<span class="d-inline-block">
+										Search UI
+									</span>
+									<span class="d-inline-block">
+										<i class="bi bi-chevron-right"></i>
+									</span>
+									<span class="d-inline-block">
+										Events
+									</span>
+								</span>
+								<span class="doc-search__description fs-14">
+									Nice nice, that’s a good start. But what if we want to introduce the ellipsis not on
+									the first line but somewhere, say, the third line of text?
+								</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="modal-footer flex-wrap border-top-0">
+				<div class="d-flex align-items-center flex-shrink-0 gap-1">
+					<span class="d-inline-block py-1 px-2 rounded border border-outnline border-opacity-2 fs-12 lh-1">
+						<i class="bi bi-arrow-up"></i>
+					</span>
+					<span class="d-inline-block py-1 px-2 rounded border border-outnline border-opacity-2 fs-12 lh-1">
+						<i class="bi bi-arrow-down"></i>
+					</span>
+					<span class="d-inline-block flex-shrink-0 fs-14 lh-1">
+						to navigate
+					</span>
+				</div>
+				<div class="d-flex align-items-center flex-shrink-0 gap-1">
+					<span class="d-inline-block py-1 px-2 rounded border border-outnline border-opacity-2 fs-12 lh-1">
+						<i class="bi bi-arrow-return-left"></i>
+					</span>
+					<span class="d-inline-block flex-shrink-0 fs-14 lh-1">
+						to select
+					</span>
+				</div>
+				<div class="d-flex align-items-center flex-shrink-0 gap-1">
+					<span
+						class="d-inline-block py-1 px-2 rounded border border-outnline border-opacity-2 ff-2 fs-12 lh-1">
+						esc
+					</span>
+					<span class="d-inline-block flex-shrink-0 fs-14 lh-1">
+						to close
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+            <!-- /Header -->
+            <!-- Doc Nav  -->
+            <nav class="doc-nav d-lg-none surface border-bottom border-opacity-2 py-2">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-12">
+                    <ul class="list list-row justify-content-between aling-items-center gap-4">
+                      <li>
+                        <button type="button" onclick="toggleSidebar()" class="d-inline-flex align-items-center gap-2 border-0 surface on-surface py-1 px-2">
+                          <span class="d-block flex-shrink-0 fs-14">
+                            <i class="bi bi-filter-right"></i>
+                          </span>
+                          <span class="d-block flex-shrink-0 fs-14"> Menu </span>
+                        </button>
+                      </li>
+                      <li>
+                        <div class="dropdown">
+                          <button class="d-inline-flex align-items-center gap-2 border-0 surface on-surface py-1 px-2" type="button" data-bs-toggle="dropdown" data-bs-offset="0,10">
+                            <span class="d-block flex-shrink-0 fs-14"> On this page </span>
+                            <span class="d-block flex-shrink-0 fs-14">
+                              <i class="bi bi-chevron-right"></i>
+                            </span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-light">
+                            <li>
+                              <a class="dropdown-item" href="#"> Action </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"> Another action </a>
+                            </li>
+                            <li>
+                              <a class="dropdown-item" href="#"> Something else here </a>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </nav>
+            <!-- /Doc Nav  -->
+            <!-- Body  -->
+            <div class="doc-body">
+              <div class="doc-body__content px-xl-12 flex-grow-1 w-100" data-bs-spy="scroll" data-bs-target="#on_this_page" data-bs-smooth-scroll="true">
+                <div class="doc-body__inner">
+                  <div class="container">
+                    <div class="row justify-content-between">
+                      <div class="col-xl-7 col-lg-8">
+                        <!-- Content  -->
+                        <div class="section-space-xsm-y" id="ai_chat">
+                          <h4>X/Twitter Platform Configuration</h4>
+                          <h5>Steps to Configure:</h5>
+                          <ul class="d-flex flex-column gap-3 mb-6">
+                            <li>Navigate to the <strong>Platforms</strong> section in the Writerap dashboard and locate the <strong>X/Twitter</strong> platform in the list.</li>
+                            <li>Click on the <strong>Settings</strong> button (settings icon) under the "Options" column for the Facebook platform.</li>
+                            <li> A modal titled <strong>Update Configuration</strong> will appear, displaying the following fields: <ul class="d-flex flex-column gap-3">
+                                <li><strong>API Key:</strong> Enter the API Key provided by your LinkedIn Developer account.</li>
+                                <li><strong>API Secret:</strong> Enter the API Secret associated with your LinkedIn Developer account.</li>
+                                <li><strong>Access Token:</strong> Provide the Access Token obtained from the LinkedIn Developer account.</li>
+                                <li><strong>Access Token Secret:</strong> Provide the Access Token Secret for your LinkedIn app.</li>
+                                <li><strong>Client ID:</strong> Enter the Client ID generated by your LinkedIn Developer account.</li>
+                                <li><strong>Client Secret:</strong> Enter the Client Secret provided for your LinkedIn app.</li>
+                                <li><strong>App Version:</strong> Specify the API version to be used (e.g., v2).</li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <img src="./assets/img/sf-15.png" alt="Image" class="img-fluid">
+                          <h5 class="mt-4">Setting Up X (Twitter) Integration for Writerap</h5>
+                          <p>Twitter uses an OAuth2 flow for most features with its v2 API. However, to upload pictures, the older Twitter v1 API must be used. Writerap leverages the normal OAuth1 flow to ensure compatibility with both APIs. Follow these steps to set up the integration:</p>
+                          <h5>Step 1: Create a New App in Twitter Developer Portal</h5>
+                          <ul class="d-flex flex-column gap-3">
+                            <li>Head over to the <a href="https://developer.x.com/">Twitter Developer Portal</a> and log in to your account.</li>
+                            <li>Sign up for a new free developer account if you haven’t already.</li>
+                            <li>Create a new app in the "Projects & Apps" section.</li>
+                          </ul>
+                          <h5>Step 2: Configure Your App</h5>
+                          <ul class="d-flex flex-column gap-3">
+                            <li>Navigate to the newly created app and click on the <strong>Settings</strong> icon.</li>
+                            <li>In the <strong>User Authentication Settings</strong>, click on <strong>Set Up</strong> and follow these configurations: <ul class="d-flex flex-column gap-3">
+                                <li><strong>App Permission</strong>: Set it to <strong>Read and Write.</strong></li>
+                                <li><strong>Type of App</strong>: Select <strong>Web App, Automated App</strong>, or <strong>Bot</strong>.</li>
+                                <li>Callback URI / Redirect URL: Enter the following URL: <br> https://Writerap.themetags.net/social/accounts/twitter/callback <br>
+                                  <img src="./assets/img/sf-16.png" alt="Image" class="img-fluid">
+                                </li>
+                                <li>Save the settings.</li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <h5>Step 3: OAuth2 Redirect URI</h5>
+                          <p>The OAuth2 Redirect URI is the location where Twitter will redirect after authentication. Use the URL specific to your setup:</p>
+                          <ul class="d-flex flex-column gap-3">
+                            <li><strong>For production:</strong> https://Writerap.themetags.net/social/accounts/twitter/callback</li>
+                            <li><strong>For localhost (development):</strong> Replace Writerap.kodepixel.com with your local development URL (e.g., http://localhost/social/accounts/twitter/callback).</li>
+                          </ul>
+                          <img src="./assets/img/sf-17.png" alt="Image" class="img-fluid">
+                          <h5 class="mt-4">Step 4: Obtain Keys and Tokens</h5>
+                          <ul class="d-flex flex-column gap-3">
+                            <li>Go to the <strong>Keys and Tokens</strong> tab in your app settings.</li>
+                            <li>Copy the following credentials for use in <strong>Writerap:</strong>
+                              <ul class="d-flex flex-column gap-3">
+                                <li><strong>API Key</strong></li>
+                                <li><strong>API Secret</strong></li>
+                                <li><strong>Access Token</strong></li>
+                                <li><strong>Access Token Secret</strong></li>
+                              </ul>
+                            </li>
+                          </ul>
+                          <h5>Step 5: Finalize and Save</h5>
+                          <p class="mb-0">Once you have completed the setup and entered the credentials in Writerap’s platform configuration, save the settings.</p>
+                        </div>
+                        <!-- /Content  -->
+                      </div>
+                      <div class="col-xl-4 col-lg-4">
+                        <!-- SiteMap  -->
+                        <!-- /SiteMap  -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- Footer  -->
+                <footer class="doc-footer py-3 border-top border-outline border-opacity-2">
+                  <div class="container">
+                    <div class="row g-4 gy-md-0">
+                      <div class="col-md-6">
+                        <p class="mb-0 fs-14"> &copy; Themetags. All Rights Reserved 2025. Licensing </p>
+                      </div>
+                      <div class="col-md-6">
+                        <ul class="list list-row align-items-center justify-content-md-end gap-3 flex-wrap">
+                          <li>
+                            <a href="#" class="link on-surface :clr-tw">
+                              <i class="bi bi-twitter"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="link on-surface :clr-fb">
+                              <i class="bi bi-facebook"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="link on-surface :clr-dbl">
+                              <i class="bi bi-dribbble"></i>
+                            </a>
+                          </li>
+                          <li>
+                            <a href="#" class="link on-surface :clr-yt">
+                              <i class="bi bi-youtube"></i>
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </footer>
+                <!-- /Footer  -->
+              </div>
+            </div>
+            <!-- /Body  -->
+          </div>
+          <!-- /Content  -->
+        </div>
+        <!-- /Main  -->
+      </div>
+    </div>
+  </div>
+  <!-- /Dashboard Max Container -->
+  <!-- scrpts -->
+  <script src="./assets/js/plugins.js"></script>
+  <script src="./assets/js/app.js"></script>
+</body>
+
+</html>

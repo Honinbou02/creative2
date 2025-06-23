@@ -1,0 +1,13 @@
+{
+    "name": "WordpressBlog",
+    "alias": "wordpressblog",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\WordpressBlog\\App\\Providers\\WordpressBlogServiceProvider"
+    ],
+    "files": [
+        "Helpers/Helper.php"
+    ]
+}

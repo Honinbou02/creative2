@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="landing page starter kit">
+  <meta name="keywords" content="bootstrap 5, saas, landing page">
+  <meta name="author" content="asaduzzaman">
+  <title>WriteRap - AI Content Generator as SaaS Platform</title>
+  <link rel="stylesheet" href="../assets/css/fonts/ff-1.css" />
+  <link rel="stylesheet" href="../assets/css/fonts/bootstrap-icons.css" />
+  <link rel="icon" href="../assets/img/favicon.png" type="image/png">
+  <link rel="stylesheet" href="../assets/css/plugins.css">
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+
+<body data-bs-theme="light">
+  <!-- preloader -->
+  <div class="preloader">
+    <div class="preloader__img">
+      <img src="../assets/img/preloader-img.png" alt="image">
+    </div>
+  </div>
+  <!-- preloader End -->
+  <!-- Header -->
+  <header class="header header--sticky border-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="menu d-lg-flex justify-content-lg-between align-items-lg-center py-3 py-lg-0">
+            <div class="d-flex align-items-center justify-content-between">
+              <a href="index.html" class="link d-inline-block flex-shrink-0">
+                <img src="../assets/img/logo.png" alt="logo" class="logo d-inline-block" />
+              </a>
+              <button class="menu-toggle w-10 h-10 p-0 border-0 lh-1 bg-primary-50 clr-neutral-100 :clr-neutral-100 transition :bg-primary-300 rounded flex-shrink-0 d-lg-none order-sm-3 fs-24">
+                <i class="bi bi-list"></i>
+              </button>
+            </div>
+            <ul class="list list-lg-row menu-nav">
+              <li class="menu-list current-page">
+                <a href="#" class="link menu-link has-sub"> Home </a>
+                <ul class="list menu-sub">
+                  <li class="menu-sub-list">
+                    <a href="../index.html" class="link menu-sub-link"> Home </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="menu-list">
+                <a href="../doc/index.html" class="link menu-link"> Document </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- /Header -->
+  <!-- Document Header  -->
+  <header class="header header--sticky border-bottom border-outline border-opacity-2 px-xl-12">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <nav class="menu d-lg-flex align-items-lg-center py-3 py-lg-0">
+            <div class="d-flex align-items-center justify-content-between d-lg-none">
+              <a href="index.html" class="link d-flex align-items-center flex-shrink-0 logo">
+                <img src="../assets/img/logo.png" alt="logo" class="img-fluid object-fit-contain" />
+              </a>
+              <div class="d-inline-flex align-items-center gap-2">
+                <button class="w-10 h-10 p-0 border-0 lh-1 inverse-surface bg-opacity-05 on-surface :on-surface transition :bg-primary-300 rounded flex-shrink-0 order-sm-3 fs-18" data-bs-toggle="modal" data-bs-target="#doc-search-list">
+                  <i class="bi bi-search"></i>
+                </button>
+                <button class="menu-toggle w-10 h-10 p-0 border-0 lh-1 inverse-surface bg-opacity-05 on-surface :on-surface transition :bg-primary-300 rounded flex-shrink-0 order-sm-3 fs-24">
+                  <i class="bi bi-list"></i>
+                </button>
+              </div>
+            </div>
+            <!-- <div class="doc-search d-none d-xl-flex">
+						<button class="doc-search__btn" type="button" data-bs-toggle="modal"
+							data-bs-target="#doc-search-list">
+							<span class="doc-search__content">
+								<span class="flex-shrink-0">
+									<i class="bi bi-search"></i>
+								</span>
+								<span class="d-block">
+									Search
+								</span>
+							</span>
+							<span class="doc-search__shortcut flex-shrink-0">
+								Ctrl K
+							</span>
+						</button>
+					</div> -->
+            <div class="menu-nav d-lg-flex align-items-lg-center flex-grow-1">
+              <form action="" class="position-relative nav_search_form">
+                <input class="form-control border border-1 border-dark border-opacity-10 ps-8 rounded-2" type="text" placeholder="Search (Ctrl+/)">
+                <span class="position-absolute nav_search_icon">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.33333 12.6667C10.2789 12.6667 12.6667 10.2789 12.6667 7.33333C12.6667 4.38781 10.2789 2 7.33333 2C4.38781 2 2 4.38781 2 7.33333C2 10.2789 4.38781 12.6667 7.33333 12.6667Z" stroke="#B3B9BD" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M13.9996 13.9996L11.0996 11.0996" stroke="#B3B9BD" stroke-width="1.33333" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </span>
+              </form>
+              <ul class="list list-lg-row gap-5 ms-xl-auto">
+                <li class="menu-list">
+                  <a href="#" class="link menu-link fs-14 lh-1"> Home </a>
+                </li>
+                <!-- <li class="menu-list">
+								<a href="#" class="link menu-link has-sub fs-14 lh-1"> Document </a>
+								<ul class="list menu-sub">
+									<li class="menu-sub-list">
+										<a href="#" class="link menu-sub-link fs-14 lh-1"> Sub Menu </a>
+									</li>
+									<li class="menu-sub-list">
+										<a href="#" class="link menu-sub-link fs-14 lh-1"> Sub Menu </a>
+									</li>
+									<li class="menu-sub-list">
+										<a href="#" class="link menu-sub-link fs-14 lh-1"> Sub Menu </a>
+									</li>
+								</ul>
+							</li> -->
+                <li class="menu-list">
+                  <a href="https://themetags.ticksy.com/" target="_blank" class="link menu-link align-items-center gap-1 fs-14 lh-1">
+                    <span class="d-block"> Support </span>
+                    <span class="d-block flex-shrink-0 fs-10">
+                      <i class="bi bi-arrow-up-right"></i>
+                    </span>
+                  </a>
+                </li>
+                <li class="menu-list">
+                  <a href="https://themeforest.net/user/themetags/portfolio" target="_blank" class="link menu-link align-items-center gap-1 fs-14 lh-1">
+                    <span class="d-block"> Envato </span>
+                    <span class="d-block flex-shrink-0 fs-10">
+                      <i class="bi bi-arrow-up-right"></i>
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="list list-lg-row align-items-lg-center gap-lg-6 ms-lg-auto ms-xl-6 ms-xxl-10">
+                <li class="menu-list">
+                  <a href="http://1.envato.market/writerap" class="link d-inline-flex justify-content-center px-6 py-2 rounded-pill primary on-primary fs-14 text-center"> Purchase Now </a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- Doc Search List Modal -->
+  <!-- <div class="modal doc-search--modal fade" id="doc-search-list" tabindex="-1" aria-hidden="true">
+	<div class="modal-dialog modal-lg">
+		<div class="modal-content">
+			<div class="modal-header border-bottom-0">
+				<div class="doc-search__is shadow-2">
+					<label for="doc-search-input" class="doc-search__icon">
+						<i class="bi bi-search"></i>
+					</label>
+					<input id="doc-search-input" type="text" class="form-control doc-search__input"
+						placeholder="Search for concepts or code">
+					<button class="doc-search__cancel">
+						Cancel
+					</button>
+				</div>
+			</div>
+			<div class="modal-body py-0">
+				<ul class="list doc-search__list">
+					<li>
+						<a href="#" class="link d-flex gap-3 on-surface py-2 px-4 :primary :on-primary rounded-1">
+							<span class="d-inline-block flex-shrink-0">
+								<i class="bi bi-columns-gap"></i>
+							</span>
+							<span class="d-flex flex-column flex-grow-1">
+								<span class="h6 d-block mb-1">
+									Configuring your display using the dashboard
+								</span>
+								<span class="d-flex align-items-center gap-1 fs-12 mb-2">
+									<span class="d-inline-block">
+										Search UI
+									</span>
+									<span class="d-inline-block">
+										<i class="bi bi-chevron-right"></i>
+									</span>
+									<span class="d-inline-block">
+										Events
+									</span>
+								</span>
+								<span class="doc-search__description fs-14">
+									Nice nice, that’s a good start. But what if we want to introduce the ellipsis not on
+									the first line but somewhere, say, the third line of text?
+								</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link d-flex gap-3 on-surface py-2 px-4 :primary :on-primary rounded-1">
+							<span class="d-inline-block flex-shrink-0">
+								<i class="bi bi-calendar2-range"></i>
+							</span>
+							<span class="d-flex flex-column flex-grow-1">
+								<span class="h6 d-block mb-1">
+									Configuring your display using the dashboard
+								</span>
+								<span class="d-flex align-items-center gap-1 fs-12 mb-2">
+									<span class="d-inline-block">
+										Search UI
+									</span>
+									<span class="d-inline-block">
+										<i class="bi bi-chevron-right"></i>
+									</span>
+									<span class="d-inline-block">
+										Events
+									</span>
+								</span>
+								<span class="doc-search__description fs-14">
+									Nice nice, that’s a good start. But what if we want to introduce the ellipsis not on
+									the first line but somewhere, say, the third line of text?
+								</span>
+							</span>
+						</a>
+					</li>
+					<li>
+						<a href="#" class="link d-flex gap-3 on-surface py-2 px-4 :primary :on-primary rounded-1">
+							<span class="d-inline-block flex-shrink-0">
+								<i class="bi bi-gear"></i>
+							</span>
+							<span class="d-flex flex-column flex-grow-1">
+								<span class="h6 d-block mb-1">
+									Configuring your display using the dashboard
+								</span>
+								<span class="d-flex align-items-center gap-1 fs-12 mb-2">
+									<span class="d-inline-block">
+										Search UI
+									</span>
+									<span class="d-inline-block">
+										<i class="bi bi-chevron-right"></i>
+									</span>
+									<span class="d-inline-block">
+										Events
+									</span>
+								</span>
+								<span class="doc-search__description fs-14">
+									Nice nice, that’s a good start. But what if we want to introduce the ellipsis not on
+									the first line but somewhere, say, the third line of text?
+								</span>
+							</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="modal-footer flex-wrap border-top-0">
+				<div class="d-flex align-items-center flex-shrink-0 gap-1">
+					<span class="d-inline-block py-1 px-2 rounded border border-outnline border-opacity-2 fs-12 lh-1">
+						<i class="bi bi-arrow-up"></i>
+					</span>
+					<span class="d-inline-block py-1 px-2 rounded border border-outnline border-opacity-2 fs-12 lh-1">
+						<i class="bi bi-arrow-down"></i>
+					</span>
+					<span class="d-inline-block flex-shrink-0 fs-14 lh-1">
+						to navigate
+					</span>
+				</div>
+				<div class="d-flex align-items-center flex-shrink-0 gap-1">
+					<span class="d-inline-block py-1 px-2 rounded border border-outnline border-opacity-2 fs-12 lh-1">
+						<i class="bi bi-arrow-return-left"></i>
+					</span>
+					<span class="d-inline-block flex-shrink-0 fs-14 lh-1">
+						to select
+					</span>
+				</div>
+				<div class="d-flex align-items-center flex-shrink-0 gap-1">
+					<span
+						class="d-inline-block py-1 px-2 rounded border border-outnline border-opacity-2 ff-2 fs-12 lh-1">
+						esc
+					</span>
+					<span class="d-inline-block flex-shrink-0 fs-14 lh-1">
+						to close
+					</span>
+				</div>
+			</div>
+		</div>
+	</div>
+</div> -->
+  <!-- /Document Header  -->
+  <!-- Colors -->
+  <div class="section-space-xsm-y">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="list list-row flex-wrap gap-4">
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center surface">
+                <p class="mb-0 on-surface fs-14"> surface </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center surface-variant">
+                <p class="mb-0 on-surface-variant fs-14"> surface variant </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center inverse-surface">
+                <p class="mb-0 inverse-on-surface fs-14"> inverse surface </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center surface-container-highest">
+                <p class="mb-0 on-surface fs-14"> surface container highest </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center surface-container-high">
+                <p class="mb-0 on-surface fs-14"> surface container high </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center surface-container">
+                <p class="mb-0 on-surface fs-14"> surface container </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center surface-container-low">
+                <p class="mb-0 on-surface fs-14"> surface container low </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center surface-container-lowest">
+                <p class="mb-0 on-surface fs-14"> surface container lowest </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center surface-bright">
+                <p class="mb-0 on-surface fs-14"> surface bright </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center surface-dim">
+                <p class="mb-0 on-surface fs-14"> surface dim </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-space-xsm-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="list list-row flex-wrap gap-4">
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center primary">
+                <p class="mb-0 on-primary fs-14"> primary </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center primary-container">
+                <p class="mb-0 on-primary-container fs-14"> primary container </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center primary-fixed">
+                <p class="mb-0 on-primary-fixed fs-14"> primary fixed </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center primary-fixed-dim">
+                <p class="mb-0 on-primary-fixed-variant fs-14"> primary fixed dim </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-space-xsm-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <ul class="list list-row flex-wrap gap-4">
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center secondary">
+                <p class="mb-0 on-secondary fs-14"> secondary </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center secondary-container">
+                <p class="mb-0 on-secondary-container fs-14"> secondary container </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center secondary-fixed">
+                <p class="mb-0 on-secondary-fixed fs-14"> secondary fixed </p>
+              </div>
+            </li>
+            <li>
+              <div class="d-grid place-content-center w-30 h-30 text-center secondary-fixed-dim">
+                <p class="mb-0 on-secondary-fixed-variant fs-14"> secondary fixed dim </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /Colors -->
+  <!-- scrpts -->
+  <script src="../assets/js/plugins.js"></script>
+  <script src="../assets/js/app.js"></script>
+</body>
+
+</html>

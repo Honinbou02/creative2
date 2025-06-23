@@ -1,0 +1,31 @@
+1. Migration = Done
+2. DB Seed = Done
+3. Login Done
+4. Dashboard = Done
+5. Template Content Generation = Done
+6. Template Content Generate button = Need to fix Generating...
+7. PDF Download = Done
+8.
+
+----------------------------------------------------------------------------------------------------------------------------------------------
+Testing Title    |    Empty Form Submit   |    PDF Download with New Tab  | HTML Download   | MS Word   |   Copy   |  Save   |   Has Error
+----------------------------------------------------------------------------------------------------------------------------------------------
+Template            Generating BTN Fix Req      Done                        Done                Done       Done       Done
+----------------------------------------------------------------------------------------------------------------------------------------------
+Generate Blog       Event Source Error                                                                     Done       Done
+----------------------------------------------------------------------------------------------------------------------------------------------
+Generate Blog Image Gen                                                                                                           Error
+----------------------------------------------------------------------------------------------------------------------------------------------
+Plagiarism                                                                                                                       Need to fix Scanning after validation error.
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Dall-E-2                                                                                                                         Need to Fix Generating after validation error
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Dall-E-3                                                                                                                         Need to Fix Generating after validation error
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SD Text 2 Image, Multi-Prompt                                                                                                    Need to Fix Generating after validation error
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SD Text 2 Image, Multi-Prompt                                                                                                    Need to Fix Generating after validation error
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Customer Account Create - Package assigning without payment method. Need to fix
+Dall-E-2                                                                                                                         Need to Fix image balance after ajax request
+Article Generate Broken img need to fix.

@@ -1,0 +1,11 @@
+{
+    "name": "SocialPilot",
+    "alias": "socialpilot",
+    "description": "",
+    "keywords": [],
+    "priority": 0,
+    "providers": [
+        "Modules\\SocialPilot\\App\\Providers\\SocialPilotServiceProvider"
+    ],
+    "files": []
+}

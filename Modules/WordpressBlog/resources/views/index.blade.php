@@ -1,0 +1,2 @@
+@extends('wordpressblog::layouts.master')
+
